@@ -1,4 +1,4 @@
-import random, telebot
+import telebot
 from telebot.types import Message
 
 TOKEN = '624978899:AAHo3bgD0eSC0v8dXXArn_J20FLyxxd34vU'
@@ -20,7 +20,7 @@ def echo_gigits(message: Message):
     if 'tratata' in message.text:
         bot.reply_to(message, 'taratata')
         return
-    bot.reply_to(message, str(random.random()))
+    bot.reply_to(message, 'tratata')
 
 @bot.message_handler(content_types=['sticker'])
 def sticker_handler(message: Message):
